@@ -1,0 +1,13 @@
+{
+    "large.tar": 0.8333,
+    "artificl.tar": 0.7821,
+    "uiq2-4.bin": 0.7341,
+    "uiq2-16.bin": 0.6945,
+    "misc.tar": 0.6523,
+    "deepfield.tar": 0.6531,
+    "vmlinux-5.10.tar": 0.655,
+    "silesia.tar": 0.6565,
+    "uiq-32.bin": 0.6391,
+    "fannie_mae_500k.tar": 0.6444,
+    "uiq2-8.bin": 0.6517
+}

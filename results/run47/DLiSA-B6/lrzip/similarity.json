@@ -1,0 +1,101 @@
+{
+    "misc.tar": {
+        "fannie_mae_500k.tar": 0.8444,
+        "uiq2-4.bin": 0.7333
+    },
+    "ambivert.wav.tar": {
+        "fannie_mae_500k.tar": 0.7111,
+        "uiq2-4.bin": 0.6,
+        "misc.tar": 0.7333
+    },
+    "uiq-32.bin": {
+        "fannie_mae_500k.tar": 0.9111,
+        "uiq2-4.bin": 0.6667,
+        "misc.tar": 0.8444,
+        "ambivert.wav.tar": 0.7556
+    },
+    "uiq2-16.bin": {
+        "fannie_mae_500k.tar": 0.7778,
+        "uiq2-4.bin": 0.8444,
+        "misc.tar": 0.7556,
+        "ambivert.wav.tar": 0.5333,
+        "uiq-32.bin": 0.7778
+    },
+    "large.tar": {
+        "fannie_mae_500k.tar": 0.6667,
+        "uiq2-4.bin": 0.7333,
+        "misc.tar": 0.7333,
+        "ambivert.wav.tar": 0.6444,
+        "uiq-32.bin": 0.7556,
+        "uiq2-16.bin": 0.8
+    },
+    "silesia.tar": {
+        "fannie_mae_500k.tar": 0.6889,
+        "uiq2-4.bin": 0.7556,
+        "misc.tar": 0.6667,
+        "ambivert.wav.tar": 0.7111,
+        "uiq-32.bin": 0.7778,
+        "uiq2-16.bin": 0.8222,
+        "large.tar": 0.8
+    },
+    "enwik8.tar": {
+        "fannie_mae_500k.tar": 0.6444,
+        "uiq2-4.bin": 0.6222,
+        "misc.tar": 0.8,
+        "ambivert.wav.tar": 0.6667,
+        "uiq-32.bin": 0.6889,
+        "uiq2-16.bin": 0.6444,
+        "large.tar": 0.7556,
+        "silesia.tar": 0.6
+    },
+    "vmlinux-5.10.tar": {
+        "fannie_mae_500k.tar": 0.8,
+        "uiq2-4.bin": 0.7333,
+        "misc.tar": 0.8667,
+        "ambivert.wav.tar": 0.6889,
+        "uiq-32.bin": 0.8889,
+        "uiq2-16.bin": 0.8444,
+        "large.tar": 0.8667,
+        "silesia.tar": 0.8,
+        "enwik8.tar": 0.7556
+    },
+    "uiq2-8.bin": {
+        "fannie_mae_500k.tar": 0.4889,
+        "uiq2-4.bin": 0.7333,
+        "misc.tar": 0.6444,
+        "ambivert.wav.tar": 0.7333,
+        "uiq-32.bin": 0.5778,
+        "uiq2-16.bin": 0.6667,
+        "large.tar": 0.8222,
+        "silesia.tar": 0.7556,
+        "enwik8.tar": 0.7111,
+        "vmlinux-5.10.tar": 0.6889
+    },
+    "artificl.tar": {
+        "fannie_mae_500k.tar": 0.8222,
+        "uiq2-4.bin": 0.7111,
+        "misc.tar": 0.9778,
+        "ambivert.wav.tar": 0.7556,
+        "uiq-32.bin": 0.8222,
+        "uiq2-16.bin": 0.7333,
+        "large.tar": 0.7111,
+        "silesia.tar": 0.6444,
+        "enwik8.tar": 0.8222,
+        "vmlinux-5.10.tar": 0.8444,
+        "uiq2-8.bin": 0.6667
+    },
+    "deepfield.tar": {
+        "fannie_mae_500k.tar": 0.8,
+        "uiq2-4.bin": 0.6444,
+        "misc.tar": 0.7333,
+        "ambivert.wav.tar": 0.8222,
+        "uiq-32.bin": 0.8889,
+        "uiq2-16.bin": 0.7111,
+        "large.tar": 0.7333,
+        "silesia.tar": 0.8444,
+        "enwik8.tar": 0.6667,
+        "vmlinux-5.10.tar": 0.8222,
+        "uiq2-8.bin": 0.6889,
+        "artificl.tar": 0.7111
+    }
+}

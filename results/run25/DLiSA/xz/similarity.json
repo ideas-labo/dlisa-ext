@@ -1,0 +1,13 @@
+{
+    "fannie_mae_500k.tar": 0.5556,
+    "uiq-32.bin": 0.6111,
+    "uiq2-8.bin": 0.6265,
+    "uiq2-16.bin": 0.7032,
+    "deepfield.tar": 0.7425,
+    "uiq2-4.bin": 0.7278,
+    "enwik8.tar": 0.7133,
+    "large.tar": 0.7359,
+    "vmlinux-5.10.tar": 0.7529,
+    "silesia.tar": 0.7449,
+    "artificl.tar": 0.7513
+}

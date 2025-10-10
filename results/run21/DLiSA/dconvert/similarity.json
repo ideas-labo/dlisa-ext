@@ -1,0 +1,12 @@
+{
+    "psd-large": 0.6727,
+    "psd-small": 0.6756,
+    "psd-medium": 0.6578,
+    "jpeg-small": 0.6146,
+    "png-small": 0.5862,
+    "jpeg-medium": 0.6037,
+    "svg-small": 0.6166,
+    "jpeg-large": 0.6118,
+    "png-large": 0.5879,
+    "png-medium": 0.6196
+}

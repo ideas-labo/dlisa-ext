@@ -1,0 +1,24 @@
+{
+    "single-channel.wav": {
+        "speech.wav": 0.8222,
+        "beethoven.wav": 0.7333
+    },
+    "dual-channel.wav": {
+        "speech.wav": 0.4889,
+        "beethoven.wav": 0.4,
+        "single-channel.wav": 0.6222
+    },
+    "helix.wav": {
+        "speech.wav": 0.5333,
+        "beethoven.wav": 0.4889,
+        "single-channel.wav": 0.6667,
+        "dual-channel.wav": 0.9111
+    },
+    "sweep.wav": {
+        "speech.wav": 0.9111,
+        "beethoven.wav": 0.9556,
+        "single-channel.wav": 0.7333,
+        "dual-channel.wav": 0.4,
+        "helix.wav": 0.4889
+    }
+}

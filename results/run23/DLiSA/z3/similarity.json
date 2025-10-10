@@ -1,0 +1,12 @@
+{
+    "QF_AUFBV_891_sqlite3.smt2": 0.6,
+    "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.5333,
+    "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.4667,
+    "QF_UF_PEQ018_size6.smt2": 0.5409,
+    "QF_BV_bench_935.smt2": 0.4927,
+    "LRA_formula_277.smt2": 0.4884,
+    "QF_UFLIA_xs_23_43.smt2": 0.5139,
+    "QF_BV_bench_3176.smt2": 0.4913,
+    "QF_LIA_tightrhombus": 0.4737,
+    "QF_RDL_orb08_888.smt2": 0.4564
+}

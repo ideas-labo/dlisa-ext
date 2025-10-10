@@ -1,0 +1,10 @@
+workload,target_algo,target_b,target_T,my_algo,my_m,s,label
+Johnny_1280x720_60_short.y4m,DLiSA,89,0.8824,DLiSA-B4,40.0,2.225,1
+Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m,DLiSA,82,3.4583999999999993,DLiSA-B4,,-1.0,-1
+blue_sky_1080p25_short.y4m,DLiSA,89,1.2691999999999994,DLiSA-B4,,-1.0,-1
+pedestrian_area_1080p25_short.y4m,DLiSA,90,1.5451,DLiSA-B4,,-1.0,-1
+riverbed_1080p25_short.y4m,DLiSA,84,3.1556,DLiSA-B4,,-1.0,-1
+sd_bridge_close_cif_short.y4m,DLiSA,89,0.09909999999999991,DLiSA-B4,17.0,5.235294117647059,1
+sd_city_4cif_short.y4m,DLiSA,86,0.5594000000000002,DLiSA-B4,,-1.0,-1
+sd_crew_cif_short.y4m,DLiSA,88,0.13180000000000014,DLiSA-B4,19.0,4.631578947368421,1
+sintel_trailer_2k_720p24_short.y4m,DLiSA,71,0.2359999999999999,DLiSA-B4,17.0,4.176470588235294,1

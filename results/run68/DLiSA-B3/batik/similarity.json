@@ -1,0 +1,74 @@
+{
+    "cubus": {
+        "cranium": 0.6667,
+        "strawberry": 0.5556
+    },
+    "jelly": {
+        "cranium": 0.8667,
+        "strawberry": 0.8444,
+        "cubus": 0.5778
+    },
+    "village": {
+        "cranium": 0.7333,
+        "strawberry": 0.8889,
+        "cubus": 0.5333,
+        "jelly": 0.8667
+    },
+    "mandelbrot": {
+        "cranium": 0.7111,
+        "strawberry": 0.7333,
+        "cubus": 0.5111,
+        "jelly": 0.8,
+        "village": 0.7111
+    },
+    "france": {
+        "cranium": 0.8222,
+        "strawberry": 0.7111,
+        "cubus": 0.5333,
+        "jelly": 0.8222,
+        "village": 0.7333,
+        "mandelbrot": 0.8444
+    },
+    "frisco": {
+        "cranium": 0.3333,
+        "strawberry": 0.5333,
+        "cubus": 0.5333,
+        "jelly": 0.4222,
+        "village": 0.5111,
+        "mandelbrot": 0.4,
+        "france": 0.3778
+    },
+    "flame": {
+        "cranium": 0.3778,
+        "strawberry": 0.4444,
+        "cubus": 0.6667,
+        "jelly": 0.3333,
+        "village": 0.4667,
+        "mandelbrot": 0.2222,
+        "france": 0.2889,
+        "frisco": 0.7333
+    },
+    "karte": {
+        "cranium": 0.8444,
+        "strawberry": 0.7333,
+        "cubus": 0.6444,
+        "jelly": 0.8444,
+        "village": 0.7556,
+        "mandelbrot": 0.8667,
+        "france": 0.8889,
+        "frisco": 0.3111,
+        "flame": 0.3556
+    },
+    "corona": {
+        "cranium": 0.7778,
+        "strawberry": 0.7111,
+        "cubus": 0.4889,
+        "jelly": 0.7778,
+        "village": 0.7333,
+        "mandelbrot": 0.8444,
+        "france": 0.8667,
+        "frisco": 0.4222,
+        "flame": 0.2889,
+        "karte": 0.8
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "vmlinux": 0.9333,
+    "misc": 0.8143,
+    "deepfield": 0.7953,
+    "large": 0.7681,
+    "fannie_mae_500k": 0.7517,
+    "enwik8": 0.7724,
+    "ambivert": 0.7928
+}

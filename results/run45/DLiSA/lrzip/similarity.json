@@ -1,0 +1,13 @@
+{
+    "vmlinux-5.10.tar": 0.2889,
+    "fannie_mae_500k.tar": 0.5611,
+    "silesia.tar": 0.5487,
+    "large.tar": 0.5329,
+    "misc.tar": 0.533,
+    "enwik8.tar": 0.5321,
+    "uiq-32.bin": 0.5408,
+    "deepfield.tar": 0.5502,
+    "uiq2-16.bin": 0.5476,
+    "artificl.tar": 0.539,
+    "uiq2-4.bin": 0.5385
+}

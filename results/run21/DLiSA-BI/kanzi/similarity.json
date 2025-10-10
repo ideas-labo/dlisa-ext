@@ -1,0 +1,51 @@
+{
+    "silesia": {
+        "vmlinux": 0.6,
+        "large": 0.8444
+    },
+    "fannie_mae_500k": {
+        "vmlinux": 0.6667,
+        "large": 0.9111,
+        "silesia": 0.9333
+    },
+    "misc": {
+        "vmlinux": 0.7333,
+        "large": 0.9333,
+        "silesia": 0.7778,
+        "fannie_mae_500k": 0.8444
+    },
+    "ambivert": {
+        "vmlinux": 0.5556,
+        "large": 0.8,
+        "silesia": 0.9556,
+        "fannie_mae_500k": 0.8889,
+        "misc": 0.7333
+    },
+    "deepfield": {
+        "vmlinux": 0.4667,
+        "large": 0.6667,
+        "silesia": 0.8222,
+        "fannie_mae_500k": 0.7556,
+        "misc": 0.6,
+        "ambivert": 0.8667
+    },
+    "enwik8": {
+        "vmlinux": 0.6222,
+        "large": 0.8667,
+        "silesia": 0.9778,
+        "fannie_mae_500k": 0.9556,
+        "misc": 0.8,
+        "ambivert": 0.9333,
+        "deepfield": 0.8
+    },
+    "artificl": {
+        "vmlinux": 0.6667,
+        "large": 0.7778,
+        "silesia": 0.7556,
+        "fannie_mae_500k": 0.6889,
+        "misc": 0.8444,
+        "ambivert": 0.8,
+        "deepfield": 0.6667,
+        "enwik8": 0.7333
+    }
+}

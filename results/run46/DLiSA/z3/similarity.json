@@ -1,0 +1,12 @@
+{
+    "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 1.0,
+    "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.7678,
+    "QF_AUFBV_891_sqlite3.smt2": 0.6897,
+    "QF_BV_bench_935.smt2": 0.5922,
+    "QF_BV_bench_3176.smt2": 0.5338,
+    "QF_RDL_orb08_888.smt2": 0.6115,
+    "QF_LIA_tightrhombus": 0.567,
+    "QF_UF_PEQ018_size6.smt2": 0.6003,
+    "QF_NRA_hong_9.smt2": 0.6077,
+    "AUFNIRA_z3.637557.smt2": 0.5969
+}

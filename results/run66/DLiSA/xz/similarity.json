@@ -1,0 +1,13 @@
+{
+    "vmlinux-5.10.tar": 0.9111,
+    "large.tar": 0.9335,
+    "uiq-32.bin": 0.9143,
+    "deepfield.tar": 0.9153,
+    "fannie_mae_500k.tar": 0.9111,
+    "uiq2-8.bin": 0.8957,
+    "misc.tar": 0.8881,
+    "artificl.tar": 0.8743,
+    "ambivert.wav.tar": 0.8428,
+    "uiq2-16.bin": 0.8181,
+    "enwik8.tar": 0.8251
+}

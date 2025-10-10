@@ -1,0 +1,51 @@
+{
+    "Johnny_1280x720_60_short.y4m": {
+        "pedestrian_area_1080p25_short.y4m": 0.6444,
+        "sd_bridge_close_cif_short.y4m": 0.6222
+    },
+    "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": {
+        "pedestrian_area_1080p25_short.y4m": 0.8222,
+        "sd_bridge_close_cif_short.y4m": 0.7111,
+        "Johnny_1280x720_60_short.y4m": 0.7778
+    },
+    "sintel_trailer_2k_720p24_short.y4m": {
+        "pedestrian_area_1080p25_short.y4m": 0.7556,
+        "sd_bridge_close_cif_short.y4m": 0.7778,
+        "Johnny_1280x720_60_short.y4m": 0.7111,
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.6667
+    },
+    "sd_crew_cif_short.y4m": {
+        "pedestrian_area_1080p25_short.y4m": 0.9333,
+        "sd_bridge_close_cif_short.y4m": 0.8667,
+        "Johnny_1280x720_60_short.y4m": 0.6222,
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.8,
+        "sintel_trailer_2k_720p24_short.y4m": 0.7333
+    },
+    "sd_city_4cif_short.y4m": {
+        "pedestrian_area_1080p25_short.y4m": 0.9333,
+        "sd_bridge_close_cif_short.y4m": 0.9111,
+        "Johnny_1280x720_60_short.y4m": 0.6222,
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.7556,
+        "sintel_trailer_2k_720p24_short.y4m": 0.8222,
+        "sd_crew_cif_short.y4m": 0.9111
+    },
+    "blue_sky_1080p25_short.y4m": {
+        "pedestrian_area_1080p25_short.y4m": 0.8889,
+        "sd_bridge_close_cif_short.y4m": 0.7778,
+        "Johnny_1280x720_60_short.y4m": 0.7556,
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.8444,
+        "sintel_trailer_2k_720p24_short.y4m": 0.7333,
+        "sd_crew_cif_short.y4m": 0.8222,
+        "sd_city_4cif_short.y4m": 0.8222
+    },
+    "riverbed_1080p25_short.y4m": {
+        "pedestrian_area_1080p25_short.y4m": 0.9556,
+        "sd_bridge_close_cif_short.y4m": 0.8444,
+        "Johnny_1280x720_60_short.y4m": 0.6,
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.7778,
+        "sintel_trailer_2k_720p24_short.y4m": 0.7556,
+        "sd_crew_cif_short.y4m": 0.9778,
+        "sd_city_4cif_short.y4m": 0.9333,
+        "blue_sky_1080p25_short.y4m": 0.8444
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "QF_LIA_tightrhombus": 0.5333,
+    "LRA_formula_277.smt2": 0.4166,
+    "AUFNIRA_z3.637557.smt2": 0.4926,
+    "QF_AUFBV_891_sqlite3.smt2": 0.4597,
+    "QF_BV_bench_3176.smt2": 0.4725,
+    "QF_UF_PEQ018_size6.smt2": 0.3938,
+    "QF_RDL_orb08_888.smt2": 0.4532,
+    "QF_UFLIA_xs_23_43.smt2": 0.434,
+    "QF_BV_bench_935.smt2": 0.4673,
+    "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.4205
+}

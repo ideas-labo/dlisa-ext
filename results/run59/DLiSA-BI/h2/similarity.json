@@ -1,0 +1,41 @@
+{
+    "smallbank-10": {
+        "smallbank-1": 0.8,
+        "voter-16": 0.7778
+    },
+    "voter-2": {
+        "smallbank-1": 0.8889,
+        "voter-16": 0.8222,
+        "smallbank-10": 0.9111
+    },
+    "tpcc-2": {
+        "smallbank-1": 0.8667,
+        "voter-16": 0.8889,
+        "smallbank-10": 0.8444,
+        "voter-2": 0.8889
+    },
+    "ycsb-600": {
+        "smallbank-1": 0.7111,
+        "voter-16": 0.7778,
+        "smallbank-10": 0.6,
+        "voter-2": 0.6444,
+        "tpcc-2": 0.7111
+    },
+    "ycsb-2400": {
+        "smallbank-1": 0.7778,
+        "voter-16": 0.8,
+        "smallbank-10": 0.6222,
+        "voter-2": 0.7111,
+        "tpcc-2": 0.7778,
+        "ycsb-600": 0.9333
+    },
+    "tpcc-8": {
+        "smallbank-1": 0.2889,
+        "voter-16": 0.3556,
+        "smallbank-10": 0.4889,
+        "voter-2": 0.4,
+        "tpcc-2": 0.3778,
+        "ycsb-600": 0.5333,
+        "ycsb-2400": 0.4667
+    }
+}

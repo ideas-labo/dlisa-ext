@@ -1,0 +1,87 @@
+{
+    "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": {
+        "QF_LIA_tightrhombus": 0.7778,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.6
+    },
+    "AUFNIRA_z3.637557.smt2": {
+        "QF_LIA_tightrhombus": 0.8667,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.7333,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.6889
+    },
+    "QF_RDL_orb08_888.smt2": {
+        "QF_LIA_tightrhombus": 0.7333,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.7778,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.6889,
+        "AUFNIRA_z3.637557.smt2": 0.7778
+    },
+    "QF_UF_PEQ018_size6.smt2": {
+        "QF_LIA_tightrhombus": 0.6222,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.8,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.7556,
+        "AUFNIRA_z3.637557.smt2": 0.6667,
+        "QF_RDL_orb08_888.smt2": 0.6222
+    },
+    "QF_BV_bench_935.smt2": {
+        "QF_LIA_tightrhombus": 0.7778,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.6,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.7333,
+        "AUFNIRA_z3.637557.smt2": 0.6889,
+        "QF_RDL_orb08_888.smt2": 0.6,
+        "QF_UF_PEQ018_size6.smt2": 0.6222
+    },
+    "QF_AUFBV_891_sqlite3.smt2": {
+        "QF_LIA_tightrhombus": 0.8444,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.6667,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.8,
+        "AUFNIRA_z3.637557.smt2": 0.8444,
+        "QF_RDL_orb08_888.smt2": 0.6222,
+        "QF_UF_PEQ018_size6.smt2": 0.7333,
+        "QF_BV_bench_935.smt2": 0.8
+    },
+    "QF_NRA_hong_9.smt2": {
+        "QF_LIA_tightrhombus": 0.9333,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.8,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.7556,
+        "AUFNIRA_z3.637557.smt2": 0.8,
+        "QF_RDL_orb08_888.smt2": 0.7111,
+        "QF_UF_PEQ018_size6.smt2": 0.6889,
+        "QF_BV_bench_935.smt2": 0.7111,
+        "QF_AUFBV_891_sqlite3.smt2": 0.7778
+    },
+    "QF_UFLIA_xs_23_43.smt2": {
+        "QF_LIA_tightrhombus": 0.8444,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.6222,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.7556,
+        "AUFNIRA_z3.637557.smt2": 0.8,
+        "QF_RDL_orb08_888.smt2": 0.7111,
+        "QF_UF_PEQ018_size6.smt2": 0.6,
+        "QF_BV_bench_935.smt2": 0.7111,
+        "QF_AUFBV_891_sqlite3.smt2": 0.8222,
+        "QF_NRA_hong_9.smt2": 0.7778
+    },
+    "QF_BV_bench_3176.smt2": {
+        "QF_LIA_tightrhombus": 0.7778,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.6444,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.6444,
+        "AUFNIRA_z3.637557.smt2": 0.8222,
+        "QF_RDL_orb08_888.smt2": 0.8222,
+        "QF_UF_PEQ018_size6.smt2": 0.4889,
+        "QF_BV_bench_935.smt2": 0.6889,
+        "QF_AUFBV_891_sqlite3.smt2": 0.6667,
+        "QF_NRA_hong_9.smt2": 0.7111,
+        "QF_UFLIA_xs_23_43.smt2": 0.7556
+    },
+    "LRA_formula_277.smt2": {
+        "QF_LIA_tightrhombus": 0.8889,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.6667,
+        "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": 0.7556,
+        "AUFNIRA_z3.637557.smt2": 0.7556,
+        "QF_RDL_orb08_888.smt2": 0.6222,
+        "QF_UF_PEQ018_size6.smt2": 0.6444,
+        "QF_BV_bench_935.smt2": 0.8444,
+        "QF_AUFBV_891_sqlite3.smt2": 0.8667,
+        "QF_NRA_hong_9.smt2": 0.8222,
+        "QF_UFLIA_xs_23_43.smt2": 0.8667,
+        "QF_BV_bench_3176.smt2": 0.7111
+    }
+}

@@ -1,0 +1,87 @@
+{
+    "QF_BV_bench_935.smt2": {
+        "QF_BV_bench_3176.smt2": 0.8444,
+        "LRA_formula_277.smt2": 0.4889
+    },
+    "QF_UFLIA_xs_23_43.smt2": {
+        "QF_BV_bench_3176.smt2": 0.5111,
+        "LRA_formula_277.smt2": 0.6889,
+        "QF_BV_bench_935.smt2": 0.5778
+    },
+    "QF_UF_PEQ018_size6.smt2": {
+        "QF_BV_bench_3176.smt2": 0.8222,
+        "LRA_formula_277.smt2": 0.3778,
+        "QF_BV_bench_935.smt2": 0.8444,
+        "QF_UFLIA_xs_23_43.smt2": 0.5556
+    },
+    "QF_RDL_orb08_888.smt2": {
+        "QF_BV_bench_3176.smt2": 0.6,
+        "LRA_formula_277.smt2": 0.7778,
+        "QF_BV_bench_935.smt2": 0.7111,
+        "QF_UFLIA_xs_23_43.smt2": 0.8222,
+        "QF_UF_PEQ018_size6.smt2": 0.5556
+    },
+    "QF_LIA_tightrhombus": {
+        "QF_BV_bench_3176.smt2": 0.3111,
+        "LRA_formula_277.smt2": 0.8,
+        "QF_BV_bench_935.smt2": 0.3333,
+        "QF_UFLIA_xs_23_43.smt2": 0.6222,
+        "QF_UF_PEQ018_size6.smt2": 0.4,
+        "QF_RDL_orb08_888.smt2": 0.5778
+    },
+    "AUFNIRA_z3.637557.smt2": {
+        "QF_BV_bench_3176.smt2": 0.6222,
+        "LRA_formula_277.smt2": 0.7556,
+        "QF_BV_bench_935.smt2": 0.6444,
+        "QF_UFLIA_xs_23_43.smt2": 0.7556,
+        "QF_UF_PEQ018_size6.smt2": 0.6222,
+        "QF_RDL_orb08_888.smt2": 0.9333,
+        "QF_LIA_tightrhombus": 0.6444
+    },
+    "QF_NRA_hong_9.smt2": {
+        "QF_BV_bench_3176.smt2": 0.8222,
+        "LRA_formula_277.smt2": 0.4667,
+        "QF_BV_bench_935.smt2": 0.9333,
+        "QF_UFLIA_xs_23_43.smt2": 0.6,
+        "QF_UF_PEQ018_size6.smt2": 0.9111,
+        "QF_RDL_orb08_888.smt2": 0.6444,
+        "QF_LIA_tightrhombus": 0.4,
+        "AUFNIRA_z3.637557.smt2": 0.6222
+    },
+    "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": {
+        "QF_BV_bench_3176.smt2": 0.5556,
+        "LRA_formula_277.smt2": 0.7333,
+        "QF_BV_bench_935.smt2": 0.7111,
+        "QF_UFLIA_xs_23_43.smt2": 0.8667,
+        "QF_UF_PEQ018_size6.smt2": 0.6,
+        "QF_RDL_orb08_888.smt2": 0.9556,
+        "QF_LIA_tightrhombus": 0.6222,
+        "AUFNIRA_z3.637557.smt2": 0.8889,
+        "QF_NRA_hong_9.smt2": 0.6889
+    },
+    "QF_AUFBV_891_sqlite3.smt2": {
+        "QF_BV_bench_3176.smt2": 0.4222,
+        "LRA_formula_277.smt2": 0.7333,
+        "QF_BV_bench_935.smt2": 0.4444,
+        "QF_UFLIA_xs_23_43.smt2": 0.8222,
+        "QF_UF_PEQ018_size6.smt2": 0.5556,
+        "QF_RDL_orb08_888.smt2": 0.6889,
+        "QF_LIA_tightrhombus": 0.7111,
+        "AUFNIRA_z3.637557.smt2": 0.7556,
+        "QF_NRA_hong_9.smt2": 0.4667,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.7333
+    },
+    "QF_LRA_clocksynchro_7clocks.worst_case_skew.induct.smt2": {
+        "QF_BV_bench_3176.smt2": 0.8222,
+        "LRA_formula_277.smt2": 0.3778,
+        "QF_BV_bench_935.smt2": 0.8444,
+        "QF_UFLIA_xs_23_43.smt2": 0.6444,
+        "QF_UF_PEQ018_size6.smt2": 0.8667,
+        "QF_RDL_orb08_888.smt2": 0.5556,
+        "QF_LIA_tightrhombus": 0.3111,
+        "AUFNIRA_z3.637557.smt2": 0.5333,
+        "QF_NRA_hong_9.smt2": 0.9111,
+        "QF_AUFLIA_swap_t1_pp_nf_ai_00010_002.cvc.smt2": 0.6,
+        "QF_AUFBV_891_sqlite3.smt2": 0.5111
+    }
+}

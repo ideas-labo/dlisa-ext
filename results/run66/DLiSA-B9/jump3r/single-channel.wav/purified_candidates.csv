@@ -1,0 +1,7 @@
+NoRes,NoReplayGain,Downmix,ReplayGainFast,MidSideStereo,Freeformat,Mono,DualChannels,Stereo,CRC,JointStereo,SwapBytes,ReplayGainAccurate,Resampling,CBR,VBRRange,weight,selected
+0,1,0,0,0,0,0,0,0,0,1,0,0,8,8,0,2.9778,1
+1,0,1,1,0,1,1,0,0,1,0,1,0,8,8,0,2.9778,1
+1,0,1,1,0,0,0,1,0,1,0,1,0,8,8,0,2.9778,1
+1,0,1,1,0,1,1,0,0,0,0,1,0,8,8,0,2.9778,1
+1,0,0,1,0,0,0,1,0,1,0,0,0,8,8,0,2.9778,1
+1,0,1,1,1,1,0,0,0,1,0,0,0,8,8,0,2.9778,1
