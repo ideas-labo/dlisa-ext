@@ -49,7 +49,7 @@ The `results` folder contains the **optimization results** for each system. Each
 - **D-SOGA, FEMOSAA, LiDOS, Seed-EA**: State-of-the-art (SOTA) baseline algorithms for comparison.
 - **DLiSA**: The ICSE version of DLiSA.
 - **DLiSA-Bx**: The improved version of **DLiSA** in this work, evaluated with different hyperparameter $\alpha$ settings.
-- **DLiSA-I, DLiSA-II**: Two ablation study variants of **DLiSA**.
+- **DLiSA-I, DLiSA-II**: Two ablation study variants of the improved **DLiSA**.
 
 #### Folder Structure and Example
 Each algorithm folder contains results from **100 independent runs**, where the optimization process is stored in separate directories:
