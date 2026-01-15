@@ -1,0 +1,10 @@
+workload,target_algo,target_b,target_T,my_algo,my_m,s,label
+Johnny_1280x720_60_short.y4m,OpperTune,77,1.014,DLiSA-B4,4,19.25,1
+Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m,OpperTune,89,3.9739999999999998,DLiSA-B4,4,22.25,1
+blue_sky_1080p25_short.y4m,OpperTune,83,1.4132000000000005,DLiSA-B4,5,16.6,1
+pedestrian_area_1080p25_short.y4m,OpperTune,79,1.7589000000000008,DLiSA-B4,7,11.285714285714286,1
+riverbed_1080p25_short.y4m,OpperTune,40,3.5986000000000007,DLiSA-B4,6,6.666666666666667,1
+sd_bridge_close_cif_short.y4m,OpperTune,38,0.10719999999999995,DLiSA-B4,6,6.333333333333333,1
+sd_city_4cif_short.y4m,OpperTune,67,0.6287000000000001,DLiSA-B4,4,16.75,1
+sd_crew_cif_short.y4m,OpperTune,53,0.1454000000000001,DLiSA-B4,4,13.25,1
+sintel_trailer_2k_720p24_short.y4m,OpperTune,68,0.2564999999999998,DLiSA-B4,4,17.0,1

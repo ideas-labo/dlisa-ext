@@ -22,7 +22,7 @@ def main():
     # selected_environments = ['jpeg-large', 'jpeg-medium', 'jpeg-small', 'png-large', 'png-medium', 'png-small']# dconvert
     # selected_environments = ['voter-2', 'voter-16', 'smallbank-1', 'smallbank-10']#h2
     # selected_environments = ['beethoven.wav', 'dual-channel.wav', 'helix.wav', 'single-channel.wav']#jump3r
-    selected_environments = ['enwik8', 'misc', 'large', 'vmlinux']  # kanzi
+    # selected_environments = ['enwik8', 'misc', 'large', 'vmlinux']  # kanzi
     # selected_environments = ['ambivert.wav.tar', 'artificl.tar', 'deepfield.tar', 'enwik8.tar', 'fannie_mae_500k.tar'] #lrzip
     # selected_environments = ['Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m', 'pedestrian_area_1080p25_short.y4m', 'blue_sky_1080p25_short.y4m', 'sd_city_4cif_short.y4m']#x264
     selected_environments = ['artificl.tar', 'large.tar', 'ambivert.tar', 'uiq2-4.bin'] #lrzip #xz
@@ -94,7 +94,7 @@ def main():
 
 def plot_5(performance_data, local_optima_indices, colors, markers, system):
 
-    fig = plt.figure(figsize=(12, 8), constrained_layout=True)
+    fig = plt.figure(figsize=(7, 6), constrained_layout=True)
     ax = fig.add_subplot(111, projection='3d')
 
     # workload_to_int = {'smallbank-10': 1, 'smallbank-1': 2,  'voter-2': 3, 'voter-16': 4}
@@ -108,7 +108,7 @@ def plot_5(performance_data, local_optima_indices, colors, markers, system):
 
     # exclude some environments to see the connection lines more clearly
 
-    keys_to_consider = ['large', 'misc', 'vmlinux']
+    # keys_to_consider = ['large', 'misc', 'vmlinux']
     # keys_to_consider = ['smallbank-10', 'smallbank-1',  'voter-2', 'voter-16']
     # keys_to_consider = ['jpeg-large', 'jpeg-medium']
     keys_to_consider = ['large.tar', 'enwik8.tar', 'uiq2-4.bin']
@@ -157,12 +157,12 @@ def plot_5(performance_data, local_optima_indices, colors, markers, system):
     ax.set_yticks(list(workload_to_int.values()))
     ax.set_yticklabels(list(workload_to_int.keys()))
 
-    ax.set_xlabel('Configuration Id', fontname='Times New Roman', fontsize=26, labelpad=5)
-    ax.set_ylabel('Workload', fontname='Times New Roman', fontsize=26, labelpad=15)
+    ax.set_xlabel('#C', fontname='Times New Roman', fontsize=26, labelpad=35)
+    ax.set_ylabel('#W', fontname='Times New Roman', fontsize=26, labelpad=35)
     if system == 'h2':
-        ax.set_zlabel('Throughput', fontname='Times New Roman', fontsize=26, labelpad=10)
+        ax.set_zlabel('Throughput', fontname='Times New Roman', fontsize=26, labelpad=20)
     else:
-        ax.set_zlabel('Runtime', fontname='Times New Roman', fontsize=26, labelpad=10)
+        ax.set_zlabel('Runtime', fontname='Times New Roman', fontsize=26, labelpad=20)
 
     yticklabels = ax.get_yticklabels()
 
@@ -172,16 +172,236 @@ def plot_5(performance_data, local_optima_indices, colors, markers, system):
     ax.set_yticklabels([label.get_text() for label in yticklabels])
 
     font_prop = FontProperties(family='Times New Roman', size=20)
-    ax.legend(loc='upper center', bbox_to_anchor=(0.5, 0), ncol=2, columnspacing=-0.1, handletextpad=-0.5,
-              labelspacing=0.01, prop=font_prop)
+    # ax.legend(loc='upper center', bbox_to_anchor=(0.5, 0), ncol=2, columnspacing=-0.1, handletextpad=-0.5,
+    #           labelspacing=0.01, prop=font_prop)
 
-    ax.tick_params(axis='y', which='major', pad=3)
-    ax.tick_params(axis='z', which='major', pad=5)
-    ax.tick_params(axis='x', which='major', pad=2)
+    # legend = ax.legend(
+    #     loc='upper center',
+    #     bbox_to_anchor=(0.5, -0.05),
+    #     ncol=4,  # ✅ 4 列
+    #     columnspacing=-0.3,  # 列间距
+    #     handletextpad=-0.5,  # marker 与文字间距
+    #     labelspacing=0.1,  # 行间距（多行时）
+    #     prop=font_prop,
+    #     frameon=False,  # ✅ 去边框
+    # )
+    # ax.set_xlim(0, 5000)
+
+    ax.tick_params(axis='y', which='major', labelsize=13, pad=13)
+    ax.tick_params(axis='z', which='major', labelsize=13, pad=13)
+    ax.tick_params(axis='x', which='major', labelsize=13, pad=13)
     ax.view_init(elev=35, azim=-45)
     # plt.show()
 
-    plt.savefig(f'{system}.pdf', format='pdf')
+    plt.savefig(f'{system}_new.pdf', format='pdf', bbox_inches='tight',)
+
+    # 你原本画图完之后
+    tikz = generate_tikz_for_plot5(
+        performance_data=performance_data,
+        local_optima_indices=local_optima_indices,
+        colors=colors,
+        markers=markers,
+        system=system,
+        workload_to_int=workload_to_int,
+        keys_to_consider=keys_to_consider,  # 跟你现在一致；想全交集就传 None
+        view_elev=35,
+        view_azim=-45,
+    )
+
+    save_tikz(tikz, f"{system}_plot5_optima.tex")
+
+
+def _sanitize_tex(s: str) -> str:
+    # workload 名字一般安全，这里做最基本处理
+    return s.replace('_', r'\_')
+
+def _mpl_marker_to_pgf(mark: str) -> str:
+    # 你现在用的 markers 里常见映射：o ^ s
+    return {
+        'o': '*',
+        '^': 'triangle*',
+        's': 'square*',
+        'D': 'diamond*',
+        'v': 'triangle*',
+        '<': 'triangle*',
+        '>': 'triangle*',
+        'p': 'pentagon*',
+        'h': 'hexagon*',
+        'x': 'x',
+        '+': '+',
+        '.': '*',  # 你连线 marker='.'，pgfplots 用 * 近似即可
+    }.get(mark, '*')
+
+def _fmt_num(x) -> str:
+    # pgfplots 对科学计数法也能处理；这里尽量稳定输出
+    if x is None:
+        return "nan"
+    try:
+        x = float(x)
+        if np.isnan(x) or np.isinf(x):
+            return "nan"
+        return f"{x:.10g}"
+    except Exception:
+        return "nan"
+
+def generate_tikz_for_plot5(
+    performance_data: dict,
+    local_optima_indices: dict,
+    colors: list,
+    markers: list,
+    system: str,
+    workload_to_int: dict = None,
+    keys_to_consider: list = None,
+    view_elev: int = 35,
+    view_azim: int = -45,
+    fig_width: str = "12cm",
+    fig_height: str = "8cm",
+    legend_cols: int = 2,
+    line_color: str = "B1AAAA",
+    line_style: str = "dashed",
+    point_size: str = "2.2pt",
+    opacity: float = 0.6,
+) -> str:
+    """
+    把 plot_5 的“局部最优点 + common optima 虚线连接”导出为可编译的 TikZ/PGFPlots。
+    - performance_data[workload] -> 1D array-like (len=N)
+    - local_optima_indices[workload] -> list[int] (索引是 Configuration Id)
+    - colors: 形如 ['#F0C36D', '#7DA6D9', ...] 或不带 '#'
+    - markers: 形如 ['o','^','s',...]
+    """
+
+    if workload_to_int is None:
+        # 默认沿用你当前脚本的 mapping
+        workload_to_int = {'deepfield': 1, 'large': 2, 'vmlinux': 3, 'misc': 4}
+
+    # 计算 common optima（与你现在写法一致：可选 keys_to_consider 做更清晰的连线）
+    if keys_to_consider is None:
+        values_to_intersect = [set(v) for v in local_optima_indices.values()]
+    else:
+        values_to_intersect = [set(local_optima_indices[k]) for k in keys_to_consider if k in local_optima_indices]
+    common_optima_indices = set.intersection(*values_to_intersect) if values_to_intersect else set()
+
+    # 组装工作负载顺序：按 y 值排序，保证 ytick label 顺序稳定
+    workloads_sorted = sorted(workload_to_int.keys(), key=lambda k: workload_to_int[k])
+    # 只保留你实际有数据的 workload
+    workloads_sorted = [w for w in workloads_sorted if (w in performance_data and w in local_optima_indices)]
+
+    # 颜色定义
+    def_color_lines = []
+    plot_styles = []  # 每个 workload 的 addplot 样式 + 数据 table
+    legend_entries = []
+
+    for i, w in enumerate(workloads_sorted):
+        c = colors[i % len(colors)]
+        c = c.lstrip('#')
+        color_name = f"wlcolor{i+1}"
+        def_color_lines.append(rf"\definecolor{{{color_name}}}{{HTML}}{{{c}}}")
+
+        pgf_mark = _mpl_marker_to_pgf(markers[i % len(markers)])
+
+        # 取出局部最优点
+        opt_idx = list(local_optima_indices[w])
+        perf = np.asarray(performance_data[w])
+        y = workload_to_int[w]
+
+        rows = []
+        for idx in opt_idx:
+            # x=Configuration Id(idx), y=workload_to_int, z=performance
+            z = perf[idx]
+            rows.append(f"{idx} {y} {_fmt_num(z)}")
+
+        # pgfplots table：每行 "x y z \\"
+        table_body = " \\\\\n".join(rows)
+
+        style = (
+            r"only marks,"
+            rf"mark={pgf_mark},"
+            rf"mark size={point_size},"
+            rf"draw=black,"
+            rf"fill={color_name},"
+            rf"fill opacity={opacity},"
+            rf"draw opacity=1"
+        )
+
+        plot_styles.append(
+            rf"""\addplot3+[{style}]
+table[row sep=\\] {{
+x y z \\
+{table_body} \\
+}};"""
+        )
+        legend_entries.append(rf"\addlegendentry{{{_sanitize_tex(w)}}}")
+
+    # 连线（每个 common optima index 一条线，连接所有出现该 index 的 workload）
+    conn_lines = []
+    for optima_index in sorted(common_optima_indices):
+        coords = []
+        for w in workloads_sorted:
+            if optima_index in set(local_optima_indices[w]):
+                y = workload_to_int[w]
+                z = np.asarray(performance_data[w])[optima_index]
+                coords.append(f"({optima_index},{y},{_fmt_num(z)})")
+        if len(coords) >= 1:
+            conn_lines.append(
+                rf"\addplot3+[color=connline,{line_style}] coordinates {{"
+                + " ".join(coords)
+                + r"};"
+            )
+
+    # 轴标签与你 plot_5 对齐
+    zlabel = "Throughput" if system == "h2" else "Runtime"
+
+    # ytick/label
+    ytick_vals = [workload_to_int[w] for w in workloads_sorted]
+    ytick_labels = [ _sanitize_tex(w) for w in workloads_sorted ]
+
+    # 视角：pgfplots 用 view={azim}{elev}
+    tikz = rf"""
+% =========================
+% Auto-generated by generate_tikz_for_plot5()
+% Compile with: pdflatex
+% Requires: \usepackage{{pgfplots}} \pgfplotsset{{compat=1.18}}
+% =========================
+\begin{{tikzpicture}}
+\pgfplotsset{{compat=1.18}}
+\definecolor{{connline}}{{HTML}}{{{line_color.lstrip('#')}}}
+{chr(10).join(def_color_lines)}
+
+\begin{{axis}}[
+  width={fig_width},
+  height={fig_height},
+  view={{{view_azim}}}{{{view_elev}}},
+  grid=both,
+  xlabel={{Configuration Id}},
+  ylabel={{Workload}},
+  zlabel={{{zlabel}}},
+  ytick={{{",".join(str(v) for v in ytick_vals)}}},
+  yticklabels={{{",".join("{" + lab + "}" for lab in ytick_labels)}}},
+  tick label style={{font=\small}},
+  label style={{font=\large}},
+  legend style={{
+    at={{(0.5,-0.12)}},
+    anchor=north,
+    legend columns={legend_cols},
+    /tikz/every even column/.append style={{column sep=6pt}}
+  }},
+]
+{chr(10).join(plot_styles)}
+
+% connection lines for common optima
+{chr(10).join(conn_lines)}
+
+{chr(10).join(legend_entries)}
+\end{{axis}}
+\end{{tikzpicture}}
+""".strip()
+
+    return tikz
+
+
+def save_tikz(tex_str: str, out_path: str):
+    with open(out_path, "w", encoding="utf-8") as f:
+        f.write(tex_str + "\n")
 
 
 

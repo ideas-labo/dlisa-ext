@@ -1,0 +1,12 @@
+workload,target_algo,target_b,target_T,my_algo,my_m,s,label
+corona,OpperTune,90,1.0294999999999996,DLiSA-B4,2,45.0,1
+cranium,OpperTune,76,1.4603000000000006,DLiSA-B4,1,76.0,1
+cubus,OpperTune,88,4.634400000000002,DLiSA-B4,1,88.0,1
+flame,OpperTune,62,1.3076999999999999,DLiSA-B4,1,62.0,1
+france,OpperTune,83,2.6294000000000004,DLiSA-B4,1,83.0,1
+frisco,OpperTune,78,3.603499999999999,DLiSA-B4,1,78.0,1
+jelly,OpperTune,76,1.2454000000000003,DLiSA-B4,2,38.0,1
+karte,OpperTune,75,7.605499999999999,DLiSA-B4,1,75.0,1
+mandelbrot,OpperTune,67,1.1097000000000001,DLiSA-B4,1,67.0,1
+strawberry,OpperTune,90,1.2385000000000004,DLiSA-B4,1,90.0,1
+village,OpperTune,58,1.8217000000000008,DLiSA-B4,2,29.0,1

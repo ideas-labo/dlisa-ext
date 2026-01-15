@@ -1,12 +1,20 @@
 import os
 import numpy as np
-from rpy2.robjects import r, pandas2ri
-import pandas as pd
+import rpy2.robjects as ro
+
+import rpy2.robjects as ro
+from rpy2.robjects import pandas2ri
+from rpy2.robjects.conversion import localconverter
 from rpy2.robjects.packages import importr
+
+
+
+r = ro.r
+
+import pandas as pd
 from collections import Counter
 
-pandas2ri.activate()
-sk = importr('ScottKnottESD')
+sk = importr("ScottKnottESD")
 
 
 def count_rank_ones(results_df):
@@ -81,7 +89,10 @@ def collect_data(systems, algorithms, runs, base_path='../results'):
                 column_order = list(range(algo_df.shape[1]))
             else:
                 try:
-                    r_sk = sk.sk_esd(algo_df, version='p')
+                    # r_sk = sk.sk_esd(algo_df, version='p')
+                    with localconverter(pandas2ri.converter):
+                        r_df = pandas2ri.py2rpy(algo_df)
+                    r_sk = sk.sk_esd(r_df, version='p')
                 except Exception as e:
                     a = 6
 
@@ -100,18 +111,34 @@ def collect_data(systems, algorithms, runs, base_path='../results'):
 
             for algo in algorithms:
                 vals = algo_data[algo]
-                mean = round(np.mean(vals), 3)
-                std = round(np.std(vals), 3)
-                iqr = round(calculate_iqr(vals), 3)
+                # mean = round(np.mean(vals), 3)
+                # std = round(np.std(vals), 3)
+                # iqr = round(calculate_iqr(vals), 3)
+                mean = np.mean(vals)
+                std = np.std(vals)
+                iqr = calculate_iqr(vals)
+
+                mean_str = f"{mean:.3f}"
+                std_str = f"{std:.3f}"
+                iqr_str = f"{iqr:.3f}"
+
                 rank = ranking_df.loc[algo, 'rankings']
 
+                # result = {
+                #     'Workload': workload,
+                #     'Algorithm': algo,
+                #     'r': rank,
+                #     'Mean (Std)': f'{mean} ({std})',
+                #     'IQR': iqr
+                # }
                 result = {
                     'Workload': workload,
                     'Algorithm': algo,
                     'r': rank,
-                    'Mean (Std)': f'{mean} ({std})',
-                    'IQR': iqr
+                    'Mean (Std)': f'{mean_str} ({std_str})',
+                    'IQR': iqr_str
                 }
+
                 results_list.append(result)
 
                 all_result_list.append(result)
@@ -126,7 +153,8 @@ def collect_data(systems, algorithms, runs, base_path='../results'):
 def main():
 
     systems = ['batik', 'dconvert', 'h2', 'jump3r', 'kanzi', 'lrzip', 'x264', 'xz', 'z3']
-    compared_algorithms = ['FEMOSAA', 'SEED-EA', 'DSOGA', 'LiDOS', 'DLiSA', 'DLiSA-B4']
+    compared_algorithms = ['FEMOSAA', 'SEED-EA', 'DSOGA', 'LiDOS', 'OpperTune', 'DLiSA', 'DLiSA-B4']
+    # compared_algorithms = ['DLiSA-BR1', 'DLiSA-BR2', 'DLiSA-B3']
     runs = 100
     collect_data(systems, compared_algorithms, runs)
 

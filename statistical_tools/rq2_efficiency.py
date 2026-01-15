@@ -166,7 +166,7 @@ def pairwise_efficiency_using_all_results(
 def main():
     systems = ['batik', 'dconvert', 'h2', 'jump3r', 'kanzi', 'lrzip', 'x264', 'xz', 'z3']
     my_algo = 'DLiSA-B4'
-    other_algorithms = ['DLiSA']  # ['FEMOSAA', 'SEED-EA', 'DSOGA', 'LiDOS']
+    other_algorithms = ['OpperTune']  # ['FEMOSAA', 'SEED-EA', 'DSOGA', 'LiDOS']
     runs = 100
     base_path = '../results'
     out_dir = 'RQ2'

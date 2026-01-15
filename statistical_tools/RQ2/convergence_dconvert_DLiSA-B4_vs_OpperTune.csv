@@ -1,0 +1,13 @@
+workload,target_algo,target_b,target_T,my_algo,my_m,s,label
+jpeg-large,OpperTune,30,2.0326000000000004,DLiSA-B4,2,15.0,1
+jpeg-medium,OpperTune,30,1.2269999999999996,DLiSA-B4,2,15.0,1
+jpeg-small,OpperTune,30,0.3889000000000001,DLiSA-B4,5,6.0,1
+png-large,OpperTune,30,1.7072999999999998,DLiSA-B4,2,15.0,1
+png-medium,OpperTune,21,0.5338999999999999,DLiSA-B4,2,10.5,1
+png-small,OpperTune,28,0.40319999999999995,DLiSA-B4,2,14.0,1
+psd-large,OpperTune,30,18.364299999999993,DLiSA-B4,4,7.5,1
+psd-medium,OpperTune,30,1.0768,DLiSA-B4,3,10.0,1
+psd-small,OpperTune,20,0.5002,DLiSA-B4,2,10.0,1
+svg-large,OpperTune,21,1.4447999999999999,DLiSA-B4,6,3.5,1
+svg-medium,OpperTune,10,1.4720999999999995,DLiSA-B4,4,2.5,1
+svg-small,OpperTune,16,0.4989999999999999,DLiSA-B4,8,2.0,1

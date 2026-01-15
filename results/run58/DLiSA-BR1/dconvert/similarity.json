@@ -1,0 +1,87 @@
+{
+    "jpeg-small": {
+        "png-small": 0.8667,
+        "svg-small": 0.6
+    },
+    "psd-small": {
+        "png-small": 0.7778,
+        "svg-small": 0.6,
+        "jpeg-small": 0.6444
+    },
+    "svg-medium": {
+        "png-small": 0.6667,
+        "svg-small": 0.4,
+        "jpeg-small": 0.6222,
+        "psd-small": 0.5778
+    },
+    "jpeg-medium": {
+        "png-small": 0.7778,
+        "svg-small": 0.6444,
+        "jpeg-small": 0.6889,
+        "psd-small": 0.7778,
+        "svg-medium": 0.4889
+    },
+    "png-large": {
+        "png-small": 0.8222,
+        "svg-small": 0.6444,
+        "jpeg-small": 0.6889,
+        "psd-small": 0.8222,
+        "svg-medium": 0.4889,
+        "jpeg-medium": 0.8667
+    },
+    "png-medium": {
+        "png-small": 0.8,
+        "svg-small": 0.6667,
+        "jpeg-small": 0.7111,
+        "psd-small": 0.8,
+        "svg-medium": 0.4667,
+        "jpeg-medium": 0.8889,
+        "png-large": 0.9778
+    },
+    "psd-medium": {
+        "png-small": 0.8667,
+        "svg-small": 0.6444,
+        "jpeg-small": 0.8222,
+        "psd-small": 0.8222,
+        "svg-medium": 0.5333,
+        "jpeg-medium": 0.8667,
+        "png-large": 0.8667,
+        "png-medium": 0.8889
+    },
+    "jpeg-large": {
+        "png-small": 0.7778,
+        "svg-small": 0.6444,
+        "jpeg-small": 0.6889,
+        "psd-small": 0.7778,
+        "svg-medium": 0.4889,
+        "jpeg-medium": 1.0,
+        "png-large": 0.8667,
+        "png-medium": 0.8889,
+        "psd-medium": 0.8667
+    },
+    "psd-large": {
+        "png-small": 0.6667,
+        "svg-small": 0.4,
+        "jpeg-small": 0.6222,
+        "psd-small": 0.7556,
+        "svg-medium": 0.5111,
+        "jpeg-medium": 0.6222,
+        "png-large": 0.6222,
+        "png-medium": 0.6444,
+        "psd-medium": 0.7111,
+        "jpeg-large": 0.6222
+    },
+    "svg-large": {
+        "png-small": 0.6889,
+        "svg-small": 0.6,
+        "jpeg-small": 0.7333,
+        "psd-small": 0.5111,
+        "svg-medium": 0.6222,
+        "jpeg-medium": 0.5111,
+        "png-large": 0.6,
+        "png-medium": 0.5778,
+        "psd-medium": 0.5556,
+        "jpeg-large": 0.5111,
+        "psd-large": 0.3556
+    }
+}

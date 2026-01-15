@@ -1,0 +1,10 @@
+workload,target_algo,target_b,target_T,my_algo,my_m,s,label
+ambivert,OpperTune,10,1.9171999999999998,DLiSA-B4,4,2.5,1
+artificl,OpperTune,10,0.16940000000000008,DLiSA-B4,3,3.3333333333333335,1
+deepfield,OpperTune,10,0.3289,DLiSA-B4,17,0.5882352941176471,999
+enwik8,OpperTune,10,2.536,DLiSA-B4,5,2.0,1
+fannie_mae_500k,OpperTune,10,1.7679000000000007,DLiSA-B4,3,3.3333333333333335,1
+large,OpperTune,10,0.6411000000000001,DLiSA-B4,4,2.5,1
+misc,OpperTune,10,0.2511,DLiSA-B4,4,2.5,1
+silesia,OpperTune,10,5.033500000000001,DLiSA-B4,5,2.0,1
+vmlinux,OpperTune,10,1.1859000000000004,DLiSA-B4,6,1.6666666666666667,1

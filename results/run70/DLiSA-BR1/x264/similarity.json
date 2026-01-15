@@ -1,0 +1,51 @@
+{
+    "sd_city_4cif_short.y4m": {
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.8667,
+        "sintel_trailer_2k_720p24_short.y4m": 0.9556
+    },
+    "pedestrian_area_1080p25_short.y4m": {
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.8444,
+        "sintel_trailer_2k_720p24_short.y4m": 0.8,
+        "sd_city_4cif_short.y4m": 0.8
+    },
+    "riverbed_1080p25_short.y4m": {
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.8222,
+        "sintel_trailer_2k_720p24_short.y4m": 0.7778,
+        "sd_city_4cif_short.y4m": 0.8222,
+        "pedestrian_area_1080p25_short.y4m": 0.9778
+    },
+    "blue_sky_1080p25_short.y4m": {
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.9111,
+        "sintel_trailer_2k_720p24_short.y4m": 0.9111,
+        "sd_city_4cif_short.y4m": 0.9111,
+        "pedestrian_area_1080p25_short.y4m": 0.8889,
+        "riverbed_1080p25_short.y4m": 0.8667
+    },
+    "Johnny_1280x720_60_short.y4m": {
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.9333,
+        "sintel_trailer_2k_720p24_short.y4m": 0.9333,
+        "sd_city_4cif_short.y4m": 0.9333,
+        "pedestrian_area_1080p25_short.y4m": 0.8667,
+        "riverbed_1080p25_short.y4m": 0.8444,
+        "blue_sky_1080p25_short.y4m": 0.9778
+    },
+    "sd_crew_cif_short.y4m": {
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.8667,
+        "sintel_trailer_2k_720p24_short.y4m": 0.9556,
+        "sd_city_4cif_short.y4m": 1.0,
+        "pedestrian_area_1080p25_short.y4m": 0.8,
+        "riverbed_1080p25_short.y4m": 0.8222,
+        "blue_sky_1080p25_short.y4m": 0.9111,
+        "Johnny_1280x720_60_short.y4m": 0.9333
+    },
+    "sd_bridge_close_cif_short.y4m": {
+        "Netflix_Crosswalk_4096x2160_60fps_10bit_420_short.y4m": 0.8889,
+        "sintel_trailer_2k_720p24_short.y4m": 0.8444,
+        "sd_city_4cif_short.y4m": 0.8889,
+        "pedestrian_area_1080p25_short.y4m": 0.8222,
+        "riverbed_1080p25_short.y4m": 0.8444,
+        "blue_sky_1080p25_short.y4m": 0.8889,
+        "Johnny_1280x720_60_short.y4m": 0.9111,
+        "sd_crew_cif_short.y4m": 0.8889
+    }
+}

@@ -1,0 +1,7 @@
+workload,target_algo,target_b,target_T,my_algo,my_m,s,label
+beethoven.wav,OpperTune,20,3.7980000000000036,DLiSA-B4,3,6.666666666666667,1
+dual-channel.wav,OpperTune,10,1.2380000000000002,DLiSA-B4,3,3.3333333333333335,1
+helix.wav,OpperTune,10,1.9587000000000003,DLiSA-B4,3,3.3333333333333335,1
+single-channel.wav,OpperTune,20,0.8706000000000003,DLiSA-B4,3,6.666666666666667,1
+speech.wav,OpperTune,20,1.7643,DLiSA-B4,2,10.0,1
+sweep.wav,OpperTune,20,0.3487999999999999,DLiSA-B4,3,6.666666666666667,1

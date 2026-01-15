@@ -23,15 +23,20 @@ from tuner.dlisab9 import DLiSAB9Tuner
 from tuner.dlisabI import DLiSABITuner
 from tuner.dlisabII import DLiSABIITuner
 from tuner.dlisac import DLiSACTuner
+from tuner.dlisabr1 import DLiSABR1Tuner
+from tuner.dlisabr2 import DLiSABR2Tuner
+from tuner.oppertune import OPPerTuneTuner
 
 
 def main():
     runs = 100
-    max_generation = 3
+    max_generation = 2
     pop_size = 20
     systems = ['batik', 'dconvert', 'h2', 'jump3r', 'kanzi', 'lrzip', 'x264', 'xz', 'z3']
     # Algorithms for comparison
-    compared_algorithms = ['LiDOS', 'FEMOSAA', 'SEED-EA', 'D-SOGA', 'DLiSA', 'DLiSAB4']
+    # compared_algorithms = ['LiDOS', 'FEMOSAA', 'SEED-EA', 'D-SOGA', 'DLiSA', 'DLiSAB4'
+    # BR1: max_generation=1; BR2: max_generation=2
+    compared_algorithms = ['OpperTune']
     # Sensitivity analysis
     # compared_algorithms = ['DLiSAB1', 'DLiSAB2', 'DLiSAB3', 'DLiSAB4', 'DLiSAB6', 'DLiSAB7', 'DLiSAB8', 'DLiSAB9']
     # Ablation study
@@ -102,6 +107,22 @@ def main():
                     tuner = DLiSABIITuner(system, workloads, i, optimization_goal, initial_seeds, common_seeds, max_generation, pop_size, fallback)
                 elif algo_name == 'DLiSA-C':
                     tuner = DLiSACTuner(system, workloads, i, optimization_goal, initial_seeds, common_seeds, max_generation, pop_size, fallback)
+                elif algo_name == 'DLiSABR1':
+                    tuner = DLiSABR1Tuner(system, workloads, i, optimization_goal, initial_seeds, common_seeds, max_generation, pop_size, fallback)
+                elif algo_name == 'DLiSABR2':
+                    tuner = DLiSABR2Tuner(system, workloads, i, optimization_goal, initial_seeds, common_seeds, max_generation, pop_size, fallback)
+                elif algo_name == 'OpperTune':
+                    tuner = OPPerTuneTuner(
+                        system=system,
+                        workloads=workloads,
+                        run_id=i,
+                        optimization_goal=optimization_goal,
+                        max_measurements=90,
+                        fallback=fallback,
+                        seed=42,
+                        initial_seeds=initial_seeds,
+                        common_seeds=common_seeds,
+                    )
                 else:
                     print(f"[ERROR] Unknown algorithm: {algo_name}")
                     continue
